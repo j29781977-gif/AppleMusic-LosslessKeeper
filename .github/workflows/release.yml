@@ -11,6 +11,10 @@ on:
       - 'v*'
   workflow_dispatch:
 
+# Needed so the default GITHUB_TOKEN may create the release and upload the ZIP.
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: windows-latest
