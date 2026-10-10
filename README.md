@@ -97,8 +97,8 @@ standalone `.exe` asking UI Automation for the app window only sees the top-leve
 window (6 nodes) while PowerShell sees the whole XAML tree (1000+ nodes).
 
 See [docs/HOW-IT-WORKS.md](docs/HOW-IT-WORKS.md) for the reverse-engineering
-notes, [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) when something does not
-work, and [docs/PUBLISHING.md](docs/PUBLISHING.md) to publish your own release.
+notes and [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) when something does
+not work.
 
 ### License
 
