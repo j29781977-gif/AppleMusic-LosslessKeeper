@@ -1,8 +1,5 @@
-<#
-  release.yml - build the release ZIP and attach it to a GitHub release.
-
-  Runs when you push a tag like v1.2.0 (or trigger it manually).
-#>
+# release.yml - build the release ZIP and attach it to a GitHub release.
+# Runs when you push a tag like v1.2.0 (or trigger it manually).
 name: release
 
 on:
