@@ -1,0 +1,31 @@
+<#
+  release.yml - build the release ZIP and attach it to a GitHub release.
+
+  Runs when you push a tag like v1.2.0 (or trigger it manually).
+#>
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the release ZIP
+        shell: pwsh
+        run: |
+          $version = if ($env:GITHUB_REF_NAME) { $env:GITHUB_REF_NAME -replace '^v', '' } else { '0.0.0' }
+          ./tools/Build-Release.ps1 -Version $version
+
+      - name: Upload to the release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/AppleMusicLosslessKeeper-*.zip
+          generate_release_notes: true

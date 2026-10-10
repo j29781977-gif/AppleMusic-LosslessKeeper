@@ -1,0 +1,47 @@
+{
+  "lossless": [
+    "无损音频",
+    "無損音訊",
+    "Lossless Audio",
+    "Lossless-Audio",
+    "ロスレスオーディオ",
+    "무손실 오디오",
+    "Audio sin pérdidas",
+    "Audio sans perte",
+    "Áudio sem perdas",
+    "Audio senza perdita",
+    "Аудио без потерь"
+  ],
+  "streaming": [
+    "流播放",
+    "串流",
+    "Streaming",
+    "ストリーミング",
+    "스트리밍",
+    "Wiedergabe",
+    "Reproducción",
+    "Lecture",
+    "Riproduzione",
+    "Воспроизведение"
+  ],
+  "download": [
+    "下载",
+    "下載",
+    "Download",
+    "ダウンロード",
+    "다운로드",
+    "Herunterladen",
+    "Descarga",
+    "Téléchargement",
+    "Scaricamento",
+    "Загрузка"
+  ],
+  "hires": [
+    "高解析度无损",
+    "高解析度無損",
+    "Hi-Res Lossless",
+    "ハイレゾロスレス",
+    "고음질 무손실",
+    "Hi-Res"
+  ]
+}

@@ -1,0 +1,13 @@
+# build output
+dist/
+*.zip
+
+# runtime logs
+keeper.log
+*.log
+
+# local development / diagnostics
+captures/
+bin/
+*.user
+*.tmp
